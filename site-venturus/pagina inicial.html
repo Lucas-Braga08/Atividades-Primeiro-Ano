@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Organize seu dia, conquiste sua semana.</title>
+  <link rel="stylesheet" href="pagina incial.css"> <!-- Arquivo CSS externo -->
+</head>
+<body>
+<!-- Botão de acessibilidade -->
+<div id="accessibilityBtn" class="accessibility-btn">
+  <button aria-label="Acessibilidade" id="moveHandle" onmousedown="startDrag(event)">
+    <i class="fa fa-wheelchair" aria-hidden="true"></i>
+  </button>
+
+  <div id="accessibility-options" class="accessibility-options">
+    <!-- Botão de fechar com seta -->
+    <button class="close-accessibility" onclick="toggleAccessibilityOptions()">←</button>
+
+    <label for="font-slider">Tamanho da Fonte</label>
+    <input type="range" id="font-slider" min="12" max="24" value="16" step="1" />
+    <button onclick="resetSettings()">Resetar</button>
+  </div>
+</div>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Botão de menu no canto superior esquerdo -->
+  <div class="top-left-button">
+    <button onclick="toggleMenu()">
+      <div class="bar-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </button>
+  </div>
+
+  <!-- Botões canto superior direito -->
+  <div class="top-right-buttons">
+    <a href="login.html" class="login-link">
+      <button>Entrar</button>
+     </a>
+     <a href="cadastro.html" class="cadastro-link">
+      <button>Cadastrar</button>
+    </a>
+  </div>
+
+  <!-- Menu lateral -->
+  <div id="sideMenu" class="side-menu">
+    <button class="close-arrow" onclick="toggleMenu()">&#8592;</button>
+    <button class="menu-item" onclick="location.href='planos.html'">Planos</button>
+    <button class="menu-item" onclick="location.href='sobre nós.html'">Sobre nós</button>
+    <button class="menu-item" onclick="location.href='suporte.html'">Suporte</button>
+    <button class="menu-item" onclick="location.href='sugestoes.html'">Sugestões</button>
+  </div>
+
+  <h1>Organize seu dia, conquiste sua semana.</h1>
+  <br>
+  <h2>Gerenciador de tarefas</h2>
+
+  <!-- Planos clicáveis -->
+  <div class="plans-container">
+    <!-- Plano Basic -->
+    <a href="cadastro.html" class="plan-link">
+      <div class="plan">
+        <div class="plan-content">
+          <h2>Plano Basic</h2>
+          <ul>
+            <li><span>• Monte uma planilha com suas tarefas</span> ✅</li>
+            <li><span>• Receba avisos sobre suas tarefas gratuitamente</span> ✅</li>
+            <li><span>• Receba avisos personalizados sobre suas tarefas</span> ❌</li>
+            <li><span>• Receba conselhos sobre organização pessoal</span> ❌</li>
+          </ul>
+        </div>
+        <div class="bottom-section">
+          <div class="separator"></div>
+          <div class="price">Plano Grátis<br>Realize seu cadastro.</div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Plano Basic+ -->
+    <a href="pagamento.html" class="plan-link">
+      <div class="plan">
+        <div class="plan-content">
+          <h2>Plano Plus</h2>
+          <ul>
+            <li><span>• Monte uma planilha com suas tarefas</span> ✅</li>
+            <li><span>• Receba avisos sobre suas tarefas gratuitamente</span> ✅</li>
+            <li><span>• Receba avisos personalizados sobre suas tarefas</span> ✅</li>
+            <li><span>• Receba conselhos sobre organização pessoal</span> ✅</li>
+          </ul>
+        </div>
+        <div class="bottom-section">
+          <div class="separator"></div>
+          <div class="price">R$ 19,99 mensais</div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>TaskFollow</h3>
+        <p>&copy; 2025 Todos os direitos reservados.</p>
+        <p>Email: taskfollowservicos@gmail.com</p>
+        <p>Telefone: (11) 97654-8970</p>
+      </div>
+      <div class="formas-pagamento">
+        <span>Formas de Pagamento:</span>
+        <img src="https://img.icons8.com/?size=512&id=gjCwHrMX83X5&format=png" alt="Pix" title="Pix">
+        <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" title="Visa">
+        <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Mastercard" title="Mastercard">
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('sideMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
+<script src="pagina inicial.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Cores principais */
+body {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Botão de menu (hambúrguer) */
+.top-left-button button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: orange;
+  margin: 5px 0;
+}
+
+/* Botões do topo direito */
+.top-right-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.top-right-buttons button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.top-right-buttons button:hover {
+  background-color: #e69500;
+}
+
+/* Menu lateral */
+.side-menu {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background-color: orange;
+  padding: 20px;
+  transition: left 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu.active {
+  left: 0;
+}
+
+.side-menu .close-arrow {
+  align-self: flex-end;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  background-color: white;
+  color: orange;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.menu-item:hover {
+  background-color: #f2f2f2;
+}
+
+/* Conteúdo principal */
+main {
+  margin: auto;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  color: orange;
+  margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+  background-color: orange;
+  color: white;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-info h3 {
+  margin-bottom: 10px;
+}
+
+.formas-pagamento {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formas-pagamento img {
+  width: 40px;
+  margin: 5px 0;
+}
+.criadores {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.fotos-equipe {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.criador {
+  margin: 10px;
+  text-align: center;
+}
+
+.criador img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid orange;
+  object-fit: cover;
+}
+
+.criador p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+.criador img.lucas {
+  object-position: top;
+}

@@ -1,0 +1,117 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Cor de fundo branca */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333; /* Cor do texto */
+}
+
+/* Container principal do login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Caixa de login */
+.login-box {
+  background-color: #fff; /* Fundo branco */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ff6b00; /* Borda laranja */
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff6b00; /* Título laranja */
+}
+
+/* Estilos dos campos de entrada */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+/* Estilo quando o campo de entrada está em foco */
+.input-group input:focus {
+  border-color: #ff6b00; /* Borda laranja ao focar */
+  outline: none;
+}
+
+/* Estilo do link "Esqueci minha senha" */
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  font-size: 14px;
+  color: #ff6b00; /* Cor laranja */
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo do botão */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6b00; /* Cor de fundo laranja */
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65a00; /* Tom mais escuro de laranja */
+}
+
+/* Estilo da seção de registro */
+.register {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register p {
+  font-size: 14px;
+}
+
+.register a {
+  color: #ff6b00; /* Cor laranja */
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagamento - Plano Plus</title>
+  <link rel="stylesheet" href="pagamento.css">
+</head>
+<body class="pagamento-body">
+
+  <div class="pagamento-container">
+    <h1>Pagamento do Plano Plus</h1>
+    <p class="subtitulo">Aproveite todos os recursos por apenas <strong>R$ 19,99/mês</strong></p>
+
+    <form class="form-pagamento">
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" required>
+
+      <label for="cartao">Número do cartão</label>
+      <input type="text" id="cartao" maxlength="16" required>
+
+      <label for="validade">Validade (MM/AA)</label>
+      <input type="text" id="validade" placeholder="MM/AA" required>
+
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" maxlength="3" required>
+
+      <button type="submit">Finalizar pagamento</button>
+    </form>
+
+    <div class="formas-pagamento">
+        <h3>Formas de pagamento aceitas:</h3>
+        <div class="icones-pagamento">
+          <img src="https://img.icons8.com/?size=512&id=gjCwHrMX83X5&format=png" alt="Pix" title="Pix">
+          <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" title="Visa">
+          <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Mastercard" title="Mastercard">
+        </div>
+      </div>
+      
+      
+
+  <script>
+    document.querySelector('.form-pagamento').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Pagamento realizado com sucesso!');
+    });
+  </script>
+
+</body>
+</html>

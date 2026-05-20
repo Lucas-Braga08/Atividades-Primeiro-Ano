@@ -1,0 +1,94 @@
+/* Estilos globais */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Cor de fundo branco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333; /* Cor do texto */
+}
+
+/* Container principal do formulário */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Caixa do formulário */
+.form-box {
+  background-color: #fff; /* Fundo branco */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Largura aumentada */
+  text-align: center;
+  border: 1px solid #ff6b00; /* Borda laranja */
+}
+
+/* Título principal */
+h2 {
+  color: #ff6b00; /* Cor laranja */
+  margin-bottom: 30px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/* Estilo dos grupos de input */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Rótulos */
+.input-group label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+  align-self: flex-start;
+}
+
+/* Estilo dos inputs */
+.input-group input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+/* Foco nos inputs */
+.input-group input:focus {
+  outline: none;
+  border-color: #ff6b00; /* Borda laranja ao focar */
+}
+
+/* Estilo do botão */
+button {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  background-color: #ff6b00; /* Cor laranja */
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+  background-color: #e65a00; /* Tom mais escuro de laranja */
+}

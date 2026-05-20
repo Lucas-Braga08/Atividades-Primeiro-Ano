@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre Nós - Organize seu dia</title>
+  <link rel="stylesheet" href="sobre nós.css">
+</head>
+<body>
+
+  <!-- Botão de menu no canto superior esquerdo -->
+  <div class="top-left-button">
+    <button onclick="toggleMenu()">
+      <div class="bar-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </button>
+  </div>
+
+  <!-- Botões canto superior direito -->
+  <div class="top-right-buttons">
+    <a href="login.html" class="login-link">
+      <button>Entrar</button>
+    </a>
+    <a href="cadastro.html" class="cadastro-link">
+      <button>Cadastrar</button>
+    </a>
+  </div>
+
+  <!-- Menu lateral -->
+  <div id="sideMenu" class="side-menu">
+    <button class="close-arrow" onclick="toggleMenu()">&#8592;</button>
+    <button class="menu-item" onclick="location.href='planos.html'">Planos</button>
+    <button class="menu-item" onclick="location.href='sobre.html'">Sobre nós</button>
+    <button class="menu-item" onclick="location.href='suporte.html'">Suporte</button>
+    <button class="menu-item" onclick="location.href='sugestoes.html'">Sugestões</button>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <main style="max-width: 800px; margin-top: 100px; padding: 0 20px; text-align: left;">
+    <h1>Sobre Nós</h1>
+    <p>Somos um grupo de alunos do 1º ano do curso de Desenvolvimento de Sistemas da ETEC da Zona Leste, e estamos animados em compartilhar com você o resultado de um projeto que nasceu de um grande desafio — e de uma ideia que pode realmente fazer a diferença!</p>
+
+    <p>Este site foi criado como parte de uma iniciativa da Venturus, nossa parceira nessa jornada de aprendizado e inovação. Após concluirmos com sucesso a primeira fase do trilha de aprendizado e conquistarmos nosso certificado, seguimos agora para a segunda etapa do desafio, prontos para mostrar ainda mais do que somos capazes.</p>
+
+    <p>A escolha do tema do nosso projeto foi feita com muito cuidado. Identificamos que muitas pessoas enfrentam dificuldades para manter a rotina organizada — seja nos estudos, no trabalho, em casa ou na vida social. Foi aí que surgiu a nossa missão: criar uma plataforma simples, dinâmica e eficiente para ajudar você a ter mais controle do seu tempo e melhorar sua produtividade.</p>
+
+    <p>Nós — <strong>David Teixeira, Lucas Braga e Enzo Caldeira</strong> — nos comprometemos a oferecer uma ferramenta que realmente atenda às suas necessidades. Nosso sistema de organização de tarefas e coordenação de rotina foi pensado para acompanhar o seu dia a dia e facilitar sua vida.</p>
+
+    <p>Acreditamos no potencial transformador do nosso site e vamos continuar melhorando com base no feedback de todos os usuários. Sua opinião é muito importante para nós. Obrigado por fazer parte dessa jornada!</p>
+  </main>
+      <!-- Fotos dos criadores -->
+      <section class="criadores">
+        <h2 style="color: orange; margin-top: 40px;">Conheça os Criadores</h2>
+        <div class="fotos-equipe">
+          <div class="criador">
+            <img src="david.jpg" alt="David Teixeira">
+            <p>David Teixeira</p>
+          </div>
+          <div class="criador">
+            <img src="lucas.jpg" alt="Lucas Braga" class="lucas">
+
+            <p>Lucas Braga</p>
+          </div>
+          <div class="criador">
+            <img src="enzo.jpg" alt="Enzo Caldeira">
+            <p>Enzo Caldeira</p>
+          </div>
+        </div>
+      </section>
+  
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>TaskFollow</h3>
+        <p>&copy; 2025 Todos os direitos reservados.</p>
+        <p>Email: taskfollowservicos@gmail.com</p>
+        <p>Telefone: (11) 97654-8970</p>
+      </div>
+      <div class="formas-pagamento">
+        <span>Formas de Pagamento:</span>
+        <img src="https://img.icons8.com/?size=512&id=gjCwHrMX83X5&format=png" alt="Pix" title="Pix">
+        <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa" title="Visa">
+        <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Mastercard" title="Mastercard">
+        
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('sideMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
