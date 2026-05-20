@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class SalariosMinimos {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite o salário da pessoa: ");
+        double salarioUsuario = input.nextDouble();
+
+        double salarioMinimo = 1000.00;
+        double quantidade = salarioUsuario / salarioMinimo;
+
+        System.out.println("A pessoa ganha " + quantidade + " salários mínimos.");
+    }
+}
